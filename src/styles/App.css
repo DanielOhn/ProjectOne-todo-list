@@ -1,0 +1,54 @@
+body {
+  background: darkslategray;
+  color: white;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  
+  display: flex;
+  flex-flow: column nowrap;
+  align-self: center;
+}
+
+.content {
+  border: solid;
+  width: 25em;
+  height: 50vh;
+  align-self: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+
+.tasks {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
+
+.list {
+  overflow: hidden;
+}
+
+.task-input {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid;
+  border-width: thin;
+}
+
+.add-task {
+  width: 100%
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    width: 75%;
+  }
+}
+
+
